@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <title>Odin dashboard</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="logo">
+                <svg class="icon">
+                    <use xlink:href="assets/icons.svg#logo"></use>
+                </svg>
+                <p>Dashboard</p>
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons.svg#icon-home"></use>
+                            </svg>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons.svg#icon-profile"></use>
+                            </svg>Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons.svg#icon-messages"></use>
+                            </svg>Messages
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons.svg#icon-history"></use>
+                            </svg>History
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons.svg#icon-tasks"></use>
+                            </svg>Tasks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons.svg#icon-communities"></use>
+                            </svg>Communities
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons.svg#icon-settings"></use>
+                            </svg>Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons.svg#icon-support"></use>
+                            </svg>Support
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use xlink:href="assets/icons.svg#icon-privacy"></use>
+                            </svg>Privacy
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="dashboard">
+            <div class="header">
+                <div class="search">
+                    <svg class="search-icon">
+                        <use xlink:href="assets/icons.svg#icon-search"></use>
+                    </svg>
+                    <input type="search" name="search-input" id="search-input">
+                    <button type="button" class="notification">
+                        <svg class="search-icon">
+                            <use xlink:href="assets/icons.svg#icon-notification"></use>
+                        </svg>
+                    </button>
+                    <img src="/assets/profile-photo.jpg" alt="Profile image">
+                    <p class="username">Morgan Oakley</p>
+                </div>
+                <div class="actions">
+                    <img src="/assets/profile-photo.jpg" alt="Profile image">
+                    <div class="profile-name">
+                        <p>Hi there!</p>
+                        <p>Morgan Oakley (@morgan)</p>
+                    </div>
+                    <ul>
+                        <li><button type="button">New</button></li>
+                        <li><button type="button">Upload</button></li>
+                        <li><button type="button">Share</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content">
+                <div class="projects-container">
+                    <h3>Your projects</h3>
+
+                    <div class="project-items">
+                        <div class="item">
+                            <h3>Super Cool project</h3>
+                            <p>
+                                nesciunt saepe, quasi vel quos quibusdam inventore nam ea officia commodi voluptatem
+                                libero. Ex
+                                quia molestiae quaerat.
+                            </p>
+                            <ul>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-star-plus"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-eye"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-v-shaped"></use></svg></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <h3>Super Cool project</h3>
+                            <p>
+                                nesciunt saepe, quasi vel quos quibusdam inventore nam ea officia commodi voluptatem
+                                libero. Ex
+                                quia molestiae quaerat.
+                            </p>
+                            <ul>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-star-plus"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-eye"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-v-shaped"></use></svg></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <h3>Super Cool project</h3>
+                            <p>
+                                nesciunt saepe, quasi vel quos quibusdam inventore nam ea officia commodi voluptatem
+                                libero. Ex
+                                quia molestiae quaerat.
+                            </p>
+                            <ul>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-star-plus"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-eye"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-v-shaped"></use></svg></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <h3>Super Cool project</h3>
+                            <p>
+                                nesciunt saepe, quasi vel quos quibusdam inventore nam ea officia commodi voluptatem
+                                libero. Ex
+                                quia molestiae quaerat.
+                            </p>
+                            <ul>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-star-plus"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-eye"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-v-shaped"></use></svg></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <h3>Super Cool project</h3>
+                            <p>
+                                nesciunt saepe, quasi vel quos quibusdam inventore nam ea officia commodi voluptatem
+                                libero. Ex
+                                quia molestiae quaerat.
+                            </p>
+                            <ul>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-star-plus"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-eye"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-v-shaped"></use></svg></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="item">
+                            <h3>Super Cool project</h3>
+                            <p>
+                                nesciunt saepe, quasi vel quos quibusdam inventore nam ea officia commodi voluptatem
+                                libero. Ex
+                                quia molestiae quaerat.
+                            </p>
+                            <ul>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-star-plus"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-eye"></use></svg></button>
+                                </li>
+                                <li>
+                                    <button type="button"><svg class="icon"><use xlink:href="assets/icons.svg#icon-v-shaped"></use></svg></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="announcements-container">
+                    <h3>Announcements</h3>
+                    <div class="announcements">
+                        <div class="announcement-item">
+                            <h3>Site </h3>
+                            <p>
+                                Iste animi enim eaque aliquam obcaecati
+                            </p>
+                        </div>
+                        <div class="announcement-item">
+                            <h3>Site </h3>
+                            <p>
+                                Iste animi enim eaque aliquam obcaecati
+                            </p>
+                        </div>
+                        <div class="announcement-item">
+                            <h3>Site </h3>
+                            <p>
+                                Iste animi enim eaque aliquam obcaecati
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-container">
+                    <h3>Trending</h3>
+                    <div class="trending">
+                        <div class="trend-item">
+                            <img src="assets/" alt="">
+                            <h3>@tegan</h3>
+                            <p>World peace maker</p>
+                        </div>
+                        <div class="trend-item">
+                            <img src="assets/" alt="">
+                            <h3>@morgan</h3>
+                            <p>Super Cool Project</p>
+                        </div>
+                        <div class="trend-item">
+                            <img src="assets/" alt="">
+                            <h3>@kendall</h3>
+                            <p>Life changing App</p>
+                        </div>
+                        <div class="trend-item">
+                            <img src="assets/" alt="">
+                            <h3>@alex</h3>
+                            <p>No traffic maker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
