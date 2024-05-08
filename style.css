@@ -26,8 +26,6 @@ ul li {
 .container {
     display: grid;
     grid-template-columns: max(150px, 20%) 1fr;
-    width: 100vw;
-    min-height: 100vh;
     font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
@@ -187,14 +185,12 @@ ul li {
 .content .projects-container {
     grid-column: 1 / 2;
     grid-row: 1 / -1;    
-    background: red;
 } 
 
 .content > div > h3 {
     font-size: 1.4rem;
     color: var(--font-color);
 }
-
 
 .project-items {
     margin-top: 15px;
@@ -228,12 +224,81 @@ ul li {
     gap: 20px;
 }
 
+/* ANNOUNCEMENTS */
+
 .content .announcements-container {
-    background: blue;
+    display: flex;
+    flex-direction: column;
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
 }
 
-.content .trending-container {
+.content .announcements-container .announcements {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 15px;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+.content .announcements-container .announcements .item {
+    border-bottom: 1px solid var(--gray);
+    margin: 10px 0;
+}
+
+.content .announcements-container .announcements .item h3 {
+    font-size: 1rem;
+}
+
+.content .announcements-container .announcements .item p {
+    margin-bottom: 15px;
+}
+
+
+/* TRENDING */
+
+.trending-container {
     grid-column: 2 / -1;
     grid-row: 2 / -1;
-    background: purple;
+}
+
+.trending-container .trending {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px;
+    margin-top: 12px;
+    background-color: var(--white);
+    border-radius: 15px;
+}
+
+.trending-container .trending .item {
+    display: flex;
+    align-items: center;
+}
+
+.trending-container .trending .item:not(.item:last-child) {
+    margin-bottom: 23px;
+}
+
+
+.trending-container .trending .item > div h3 {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.trending-container .trending .item div > p {
+    font-weight: 400;
+    font-size: .9rem;
+}
+
+
+.trending-container .trending .item img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    margin-right: 10px;
 }
